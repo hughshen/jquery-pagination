@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Simple Pagination</title>
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jquery-pagination.js"></script>
+	<style>
+		.wrap {
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			width: 400px;
+			margin-left: -200px;
+		}
+		.wrap .item {
+			display: none;
+			background: #ddd;
+			text-align: center;
+			padding: 5px 0;
+			border-bottom: 1px solid #000;
+		}
+		.pagination ul {
+			padding: 0;
+			list-style: none;
+			margin: 20px 0;
+		}
+		.pagination ul li {
+			display: inline-block;
+			margin: 0 3px;
+		}
+		.pagination ul li:first-child {
+			margin-left: 0;
+		}
+		.pagination ul li a {
+			display: block;
+			padding: 5px 10px;
+			text-decoration: none;
+		}
+		.pagination ul li.active a, .pagination ul li:not(.sep) a:hover {
+			background: #ddd;
+			border-bottom: 2px solid #000;
+		}
+		.pagination ul li.sep a {
+			color: #000;
+			cursor: default;
+			padding: 5px 0;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wrap">
+		<div class="items-wrap">
+			<div class="item">1111</div>
+			<div class="item">1111</div>
+			<div class="item">1111</div>
+			<div class="item">1111</div>
+			<div class="item">1111</div>
+			<div class="item">2222</div>
+			<div class="item">2222</div>
+			<div class="item">2222</div>
+			<div class="item">2222</div>
+			<div class="item">2222</div>
+			<div class="item">3333</div>
+			<div class="item">3333</div>
+			<div class="item">3333</div>
+			<div class="item">3333</div>
+			<div class="item">3333</div>
+			<div class="item">4444</div>
+			<div class="item">4444</div>
+			<div class="item">4444</div>
+			<div class="item">4444</div>
+			<div class="item">4444</div>
+			<div class="item">5555</div>
+			<div class="item">5555</div>
+			<div class="item">5555</div>
+			<div class="item">5555</div>
+			<div class="item">5555</div>
+			<div class="item">6666</div>
+			<div class="item">6666</div>
+			<div class="item">6666</div>
+			<div class="item">6666</div>
+			<div class="item">6666</div>
+			<div class="item">7777</div>
+			<div class="item">7777</div>
+			<div class="item">7777</div>
+			<div class="item">7777</div>
+			<div class="item">7777</div>
+			<div class="item">8888</div>
+			<div class="item">8888</div>
+			<div class="item">8888</div>
+			<div class="item">8888</div>
+			<div class="item">8888</div>
+		</div>
+		<div class="pagination"></div>
+	</div>
+
+<script>
+;(function($) {
+	$('.wrap').pagination();
+})(jQuery);
+</script>
+
+</body>
+</html>
